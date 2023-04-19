@@ -1,7 +1,10 @@
 name: Release Charts Dev
 
 on:
-  push:
+#   push:
+#     branches:
+#       - development
+  pull_request:
     branches:
       - development
   
