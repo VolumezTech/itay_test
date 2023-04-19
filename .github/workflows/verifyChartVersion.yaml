@@ -1,10 +1,12 @@
 name: Verify Chart Version
 
 on:
-  # Triggers the workflow on pull request events but only for the "development" branch
-  pull_request:
-    types: [closed]
-    branches: [ "development" ]
+  push:
+    branches:
+      - development
+#   pull_request:
+#     types: [closed]
+#     branches: [ "development" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
